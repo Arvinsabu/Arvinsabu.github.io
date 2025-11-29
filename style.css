@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+#projects {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.project-card {
+  background: #eee;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  color: #0000ee;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 30px;
+}
