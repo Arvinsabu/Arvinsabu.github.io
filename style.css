@@ -1,54 +1,104 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  color: #333;
+  background: #f4f4f4;
+  color: #222;
 }
 
-header {
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #111;
+  color: white;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
   background: #222;
   color: white;
-  text-align: center;
-  padding: 60px 20px;
+}
+.hero span {
+  color: #00e1ff;
+}
+.btn {
+  padding: 12px 25px;
+  background: #00e1ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.btn:hover {
+  opacity: 0.7;
 }
 
-h1 {
-  margin: 0;
-  font-size: 48px;
-}
-
-section {
+/* SECTION */
+.section {
   max-width: 900px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 50px 20px;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-#projects {
-  background: #fff;
-  padding: 40px;
+/* SKILLS */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+.skill {
+  background: white;
+  padding: 15px;
   border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 .project-card {
-  background: #eee;
+  background: white;
   padding: 20px;
-  margin: 15px 0;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-.project-card h3 {
-  margin-top: 0;
-}
-
 .project-card a {
-  color: #0000ee;
+  color: #0077ff;
   text-decoration: none;
 }
 
+/* CONTACT */
+.contact p {
+  text-align: center;
+}
+
+/* FOOTER */
 footer {
+  background: #111;
+  color: white;
   text-align: center;
   padding: 20px;
-  background: #222;
-  color: white;
-  margin-top: 30px;
+  margin-top: 40px;
 }
