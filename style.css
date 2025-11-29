@@ -1,8 +1,38 @@
+/* BASIC STYLES */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+.dark {
+  background: #111;
+  color: #eee;
+}
+.dark nav, .dark footer {
+  background: #000;
+}
+.dark .project-card, .dark .skill {
+  background: #222;
+  color: white;
+}
+
+/* DARK MODE BUTTON */
+.dark-toggle {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
 }
 
 /* NAVBAR */
@@ -13,13 +43,9 @@ body {
   background: #111;
   color: white;
 }
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
 .navbar a {
   color: white;
+  margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -34,10 +60,16 @@ body {
 .hero span {
   color: #00e1ff;
 }
+.typing {
+  font-size: 22px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
 .btn {
-  padding: 12px 25px;
   background: #00e1ff;
   color: black;
+  padding: 12px 25px;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
@@ -46,30 +78,40 @@ body {
   opacity: 0.7;
 }
 
-/* SECTION */
+/* SOCIAL ICONS */
+.social-icons {
+  margin-top: 25px;
+}
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #00e1ff;
+}
+
+/* SECTIONS */
 .section {
   max-width: 900px;
   margin: auto;
   padding: 50px 20px;
 }
-.section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
 
 /* SKILLS */
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 .skill {
   background: white;
   padding: 15px;
   border-radius: 8px;
   text-align: center;
-  font-weight: bold;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
 }
 
 /* PROJECTS */
@@ -83,15 +125,23 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
-.project-card a {
-  color: #0077ff;
-  text-decoration: none;
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
-/* CONTACT */
-.contact p {
-  text-align: center;
+/* FADE-IN ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1.2s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* FOOTER */
@@ -100,5 +150,5 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
