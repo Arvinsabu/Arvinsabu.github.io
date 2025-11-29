@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <!-- DARK MODE TOGGLE -->
+  <button class="dark-toggle" onclick="toggleDarkMode()">
+    🌙
+  </button>
 
   <!-- NAVBAR -->
   <nav class="navbar">
@@ -19,75 +26,84 @@
     </ul>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <header class="hero">
     <h1>Hi, I'm <span>Your Name</span></h1>
-    <p>Full-Stack Developer • Programmer • Tech Enthusiast</p>
+    <h3 class="typing"></h3>
     <a class="btn" href="#projects">View My Work</a>
+    
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </header>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
+  <section id="about" class="section fade">
     <h2>About Me</h2>
     <p>
-      I'm a passionate developer who builds web applications, solves problems, 
-      and enjoys learning modern technologies. I specialize in JavaScript, 
-      React, Node.js, and UI design.
+      I’m a full-stack developer who builds fast, modern, and user-friendly web apps.
+      I specialize in JavaScript, React, Node.js, and UI/UX design.
     </p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section skills">
+  <section id="skills" class="section fade">
     <h2>Skills</h2>
     <div class="skill-grid">
+
       <div class="skill">HTML</div>
       <div class="skill">CSS</div>
       <div class="skill">JavaScript</div>
       <div class="skill">React</div>
       <div class="skill">Node.js</div>
       <div class="skill">MongoDB</div>
-      <div class="skill">Git & GitHub</div>
       <div class="skill">Python</div>
+      <div class="skill">Git & GitHub</div>
+
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section">
+  <section id="projects" class="section fade">
     <h2>Projects</h2>
     <div class="project-grid">
 
       <div class="project-card">
         <h3>Portfolio Website</h3>
-        <p>A clean personal developer portfolio using HTML, CSS, and JS.</p>
-        <a href="#">Live Demo</a>
+        <p>A fully responsive portfolio with animations & dark mode.</p>
+        <a href="#">View</a>
       </div>
 
       <div class="project-card">
-        <h3>Task Manager App</h3>
-        <p>Task management web app built with React and Firebase.</p>
-        <a href="#">Live Demo</a>
+        <h3>React Dashboard</h3>
+        <p>Modern dashboard built using React & Tailwind CSS.</p>
+        <a href="#">View</a>
       </div>
 
       <div class="project-card">
         <h3>API Project</h3>
-        <p>A REST API built using Node.js, Express, and MongoDB.</p>
-        <a href="#">GitHub Repo</a>
+        <p>REST API built with Node.js, Express & MongoDB.</p>
+        <a href="#">GitHub</a>
       </div>
 
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section fade contact">
     <h2>Contact</h2>
-    <p>Email: <strong>your-email@example.com</strong></p>
-    <p>GitHub: <a href="https://github.com/your-username">your-username</a></p>
-    <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+    <p>Email: your-email@example.com</p>
+    <p>GitHub: <a href="#">your-username</a></p>
+    <p>LinkedIn: <a href="#">Your Profile</a></p>
   </section>
 
   <footer>
     <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
